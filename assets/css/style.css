@@ -1,0 +1,14 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+header {
+    background-color: blue;
+}
+main {
+    background-color: aqua;
+}
+footer {
+    background-color: bisque;
+}
