@@ -20,7 +20,9 @@ body {
 header {
     background-color: blue;
 }
-
+#logo {
+    font-weight: 900;
+}
 /*Main*/
 main {
     background-color: aqua;
