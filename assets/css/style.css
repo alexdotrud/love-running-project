@@ -86,3 +86,24 @@ footer {
     background-color: bisque;
 
 }
+/*Main query: tables and bigger screens*/
+@media screen and (min-width:788px)
+{
+   nav {
+    display:block ;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+    text-spacing-trim: 2rem;
+   }
+   #menu {
+    display:flex;
+   }
+   menu > li {
+    padding-left: 1rem;
+   }
+   .nav-toggle-label {
+    display: none;
+   }
+}
