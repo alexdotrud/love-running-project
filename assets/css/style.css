@@ -95,7 +95,6 @@ footer {
     box-shadow: none;
     width: fit-content;
     padding-right: 1rem;
-    text-spacing-trim: 2rem;
    }
    #menu {
     display:flex;
@@ -105,5 +104,13 @@ footer {
    }
    .nav-toggle-label {
     display: none;
+   }
+   #logo {
+    font-size: 200%;
+    line-height: 75px;
+    margin: o o,5rem;
+   }
+   main {
+    margin-top: 79px;
    }
 }
