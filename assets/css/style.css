@@ -177,8 +177,8 @@ hr {
     color: #3a3a3a;
 }
 
-/*Main query: tables and bigger screens*/
-@media screen and (min-width:788px) {
+/*Main query: tablets and bigger screens*/
+@media screen and (min-width:768px) {
     nav {
         display: block;
         position: relative;
@@ -208,6 +208,22 @@ hr {
     main {
         margin-top: 79px;
     }
+    /* Reason section*/
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #benefits-physical > div,
+    #benefits-mental > div {
+        width: 75%;
+    }
+  
+    #benefits-mental > div{
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -219,4 +235,30 @@ hr {
         width: 300px;
         right: 50px;
     }
+}
+@media screen and (min-width: 1200px) {
+#benefits {
+    display: flex;
+    flex-direction: row;
+}
+
+#benefits > div {
+    flex: 1;
+}
+
+#benefits-image {
+    order: 0
+}
+
+#benefits-mental {
+    order: 1;
+}
+
+#benefits-mental > div {
+    align-self: flex-start;
+}
+
+#benefits-physical > div {
+    align-self: flex-end;
+}
 }
