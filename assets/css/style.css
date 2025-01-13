@@ -16,7 +16,10 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -48,7 +51,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -87,6 +90,7 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
 /*Hero*/
 #hero {
     height: 600px;
@@ -94,19 +98,70 @@ main {
     background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
 }
+
 #cover-text {
     background-color: rgba(210, 109, 107, .7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
-    width:80%;
+    width: 80%;
     min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
 }
-#cover-text > h2 , #cover-text > h3 {
-    color:white;
+
+#cover-text>h2,
+#cover-text>h3 {
+    color: white;
 }
+
+/*Reasons Section*/
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#benefit-physical>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefit-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#cirkle-bg {
+    height: 90vw;
+    width: 90vw;
+    background: url("../images/reasons-image.webp") no-repeat top center/cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*Footer*/
 #social-networks {
     text-align: center;
@@ -115,46 +170,53 @@ main {
     justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
 }
+
 /*Main query: tables and bigger screens*/
-@media screen and (min-width:788px)
-{
-   nav {
-    display:block ;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
-   }
-   #menu {
-    display:flex;
-   }
-   menu > li {
-    padding-left: 1rem;
-   }
-   .nav-toggle-label {
-    display: none;
-   }
-   #logo {
-    font-size: 200%;
-    line-height: 75px;
-    margin: o o,5rem;
-   }
-   main {
-    margin-top: 79px;
-   }
-}
-@media screen and (min-width:992px)
-{
-    #menu a:hover {
-        border-bottom:1px solid #3a3a3a;
+@media screen and (min-width:788px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
     }
+
+    #menu {
+        display: flex;
+    }
+
+    menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: o o, 5rem;
+    }
+
+    main {
+        margin-top: 79px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
     #cover-text {
-        width:300px;
-        right:50px;
+        width: 300px;
+        right: 50px;
     }
 }
