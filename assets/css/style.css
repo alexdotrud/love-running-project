@@ -207,6 +207,12 @@ hr {
 }
 
 /*Main query: tablets and bigger screens*/
+@media screen and (min-width:576px) {
+#photos {
+    column-count: 2;
+    column-gap: 0;
+}
+}
 @media screen and (min-width:768px) {
     nav {
         display: block;
@@ -214,6 +220,7 @@ hr {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
+        
     }
 
     #menu {
@@ -253,6 +260,10 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+    #photos {
+        column-count: 3;
+        column-gap: 0;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -263,6 +274,10 @@ hr {
     #cover-text {
         width: 300px;
         right: 50px;
+    }
+    #photos {
+        column-count: 4;
+        column-gap: 0;
     }
 }
 @media screen and (min-width: 1200px) {
