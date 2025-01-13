@@ -25,6 +25,7 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+
 .headen-heading {
     display: none;
 }
@@ -92,6 +93,8 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Hero*/
@@ -164,13 +167,15 @@ hr {
     align-items: center;
     justify-content: center;
 }
+
 /*Meetups Times*/
 #times {
-    background: url("../images/dublin-city.webp") no-repeat center center/cover; 
+    background: url("../images/dublin-city.webp") no-repeat center center/cover;
     display: flex;
     flex-wrap: wrap;
-   
+
 }
+
 #times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
@@ -180,17 +185,65 @@ hr {
     flex-grow: 1;
     border: 1px solid white;
 }
+
 #times h3 {
     color: #fafafa;
 }
+
 /*Gallery styles*/
 #photos img {
     width: 100%;
     line-height: 1em;
 }
+
 #photos {
     line-height: 0;
 }
+
+#signup {
+    background: url("../images/signup-image.webp") no-repeat center center/cover;
+    background-position: 75%;
+    flex-grow: 1;
+    padding: 20px 10% 0 10%;
+}
+
+#signup h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-b {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
+
 /*Footer*/
 #social-networks {
     text-align: center;
@@ -208,11 +261,12 @@ hr {
 
 /*Main query: tablets and bigger screens*/
 @media screen and (min-width:576px) {
-#photos {
-    column-count: 2;
-    column-gap: 0;
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
-}
+
 @media screen and (min-width:768px) {
     nav {
         display: block;
@@ -220,7 +274,7 @@ hr {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-        
+
     }
 
     #menu {
@@ -244,6 +298,7 @@ hr {
     main {
         margin-top: 79px;
     }
+
     /* Reason section*/
     #benefits-physical,
     #benefits-mental {
@@ -251,18 +306,42 @@ hr {
         flex-direction: column;
         width: 100%;
     }
-    #benefits-physical > div,
-    #benefits-mental > div {
+
+    #benefits-physical>div,
+    #benefits-mental>div {
         width: 75%;
     }
-  
-    #benefits-mental > div{
+
+    #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
     }
+
     #photos {
         column-count: 3;
         column-gap: 0;
+    }
+
+    #signup {
+        background-position: center;
+        position: relative;
+
+    }
+
+    #signup-form {
+        position: absolute;
+        max-width: 400px;
+        top: 150px;
+        left: 10%;
+    }
+
+    .text-input :hover {
+        border-color: #f116f1;
+    }
+
+    .submit-b :hover {
+        background-color: #fafafa;
+        color: #3a3a3a;
     }
 }
 
@@ -275,34 +354,36 @@ hr {
         width: 300px;
         right: 50px;
     }
+
     #photos {
         column-count: 4;
         column-gap: 0;
     }
 }
+
 @media screen and (min-width: 1200px) {
-#benefits {
-    display: flex;
-    flex-direction: row;
-}
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
 
-#benefits > div {
-    flex: 1;
-}
+    #benefits>div {
+        flex: 1;
+    }
 
-#benefits-image {
-    order: 0
-}
+    #benefits-image {
+        order: 0
+    }
 
-#benefits-mental {
-    order: 1;
-}
+    #benefits-mental {
+        order: 1;
+    }
 
-#benefits-mental > div {
-    align-self: flex-start;
-}
+    #benefits-mental>div {
+        align-self: flex-start;
+    }
 
-#benefits-physical > div {
-    align-self: flex-end;
-}
+    #benefits-physical>div {
+        align-self: flex-end;
+    }
 }

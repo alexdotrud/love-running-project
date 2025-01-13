@@ -24,7 +24,7 @@
         <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul id="menu">
-                <li> <a href="intex.html" >Home</a></li>
+                <li> <a href="intex.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="signup.html" class="active">Sign Up</a></li>
             </ul>
@@ -32,26 +32,52 @@
     </header>
     <!--Main body-->
     <main>
-        <section id="hero">
-
+        <section id="signup">
+            <form action="https://formdump.codeinstitute.net" mrthod="POSt" id="signup-form">
+                <h2><i class="fa-solid fa-heart-pulse"></i>Sign Up!</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" class="text-input">
+                <br>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" class="text-input">
+                <br>
+                <label for="email">Email Adress</label>
+                <input type="email" name="email" class="text-input">
+                <br>
+                <div class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input type="radio" name="running_preference" id="road" value="road" required checked>
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input type="radio" name="running_preference" id="trail" value="trail" required>
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input type="radio" name="running_preference" id="both" value="both" required>
+                    </div>
+                </div>
+                <br>
+                <input type="submit" name="buttom" class="submit-b" value="LETS GOOO!">
+            </form>
         </section>
-         </main>
-    <!--Footer-->
-    <footer>
-        <ul id="social-networks">
-            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our facebook"><i
-                        class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://x.com/" target="_blank" rel="noopener" aria-label="Visit our twitter"><i
-                        class="fa-brands fa-twitter"></i></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our instagram"><i
-                        class="fa-brands fa-instagram"></i></i></a></li>
-            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our youtube"><i
-                        class="fa-brands fa-youtube"></i></i></a></li>
+        <!--Footer-->
+        <footer>
+            <ul id="social-networks">
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://x.com/" target="_blank" rel="noopener" aria-label="Visit our twitter"><i
+                            class="fa-brands fa-twitter"></i></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our instagram"><i class="fa-brands fa-instagram"></i></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our youtube"><i
+                            class="fa-brands fa-youtube"></i></i></a></li>
 
-        </ul>
-    </footer>
-    <!-- For Awesomw Kit-->
-    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+            </ul>
+        </footer>
+        <!-- For Awesomw Kit-->
+        <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
