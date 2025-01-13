@@ -25,6 +25,9 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+.headen-heading {
+    display: none;
+}
 
 
 /* Header */
